@@ -1,0 +1,9 @@
+About page can be pics of dog, talk about books i guess
+
+previuos work experience can just be resume REMOVE PHONE NUMBER FROM RESUME, PLUS ADDRESS IF THERE
+
+projects page, can show timer program, say it's for working out or yoga or something
+Put the screensaver on there too, that should be enough.
+Need to work on getting those into git, and making sure that they have READMEs
+
+Contact can be personal and school email, plus discord handle? idfk
