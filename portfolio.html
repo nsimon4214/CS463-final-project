@@ -13,7 +13,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="01-selectors.md">About</a></li>
-          <li><a href="02-navbar.html">Previous Experience</a></li>
+          <li><a href="02-navbar.html">Work Experience</a></li>
           <li><a href="03-table.html">Projects</a></li>
           <li><a href="04-form.html">Contact</a></li>
         </ul>
@@ -23,14 +23,14 @@
       <section class="selfie-container">
         <img
           class="selfie"
-          src="/selfie.png"
+          src="/selfie.jpg"
           width="300"
           alt="Photo of student Nathan Simon, with flowers in background"
         />
       </section>
       <section id="about">
-        <h2>About</h2>
         <div class="about-content">
+          <h2>About</h2>
           <p>
             Hello! My name is Nate Simon, and I am a senior at Portland State
             University pursuing a degree in Computer Science. My hobbies include
@@ -55,6 +55,7 @@
         </div>
       </section>
       <section id="prev_exp">
+        <h2>Work Experience</h2>
         <div class="prev-exp-content">
           <div class="left-section">
             <button id="resume-button" class="resume-button">
@@ -62,7 +63,6 @@
             </button>
           </div>
           <div class="right-section">
-            <h2>Work Experience</h2>
             <p>
               My academic journey has been enriched by extensive professional
               experience gained during breaks from school. I began my career as
@@ -85,11 +85,51 @@
         <div id="resume-popup" class="popup-container">
           <div class="popup-content">
             <span id="close-popup" class="close-button">&times;</span>
-            <embed src="Resume.pdf" type="application/pdf" class="resume-embed">
+            <embed
+              src="Resume.pdf"
+              type="application/pdf"
+              class="resume-embed"
+            />
           </div>
         </div>
       </section>
-      <section id="projects"><h2>Projects</h2></section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <h3>Random Interval Timer</h3>
+          <p>
+            The <strong>Random Interval Timer</strong> is a Python-based
+            application designed to bring variety to your workouts or training
+            routines. With customizable minimum and maximum intervals, this
+            timer generates random durations to guide your exercises, rest
+            periods, or other timed activities.
+          </p>
+          <p>
+            <strong>Use Case Example:</strong> Set the timer to select intervals
+            between 60 and 120 seconds. Start the session and perform exercises
+            like pushups for 78 seconds, situps for 99 seconds, and squats for
+            102 seconds, followed by a rest for 68 seconds.
+          </p>
+          <p>
+            <strong>Features:</strong>
+          </p>
+          <ul>
+            <li>Customizable time intervals.</li>
+            <li>
+              Audio notifications to signal the start and end of each interval.
+            </li>
+            <li>Cross-platform compatibility (Windows, macOS, Linux).</li>
+            <li>Built with Python, featuring a user-friendly GUI.</li>
+          </ul>
+          <a
+            href="https://github.com/nsimon4214/random-interval-timer"
+            target="_blank"
+            class="project-link"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </section>
       <section id="contact"><h2>Contact</h2></section>
     </main>
     <script src="portfolio.js"></script>
