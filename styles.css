@@ -16,7 +16,7 @@
 
 body {
   font-family: "Times New Roman", Times, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: var(--black);
   margin: 0;
   background-color: var(--lightgray);
@@ -151,15 +151,21 @@ p {
   flex-direction: column;
 }
 
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5em;
+  background-color: var(--lightgray);
+  border-bottom: 1px solid var(--gray);
+}
+
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 5px;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold;
-  color: var(--red);
+  color: var(--black);
   cursor: pointer;
 }
+
 
 .resume-embed {
   width: 100%;
