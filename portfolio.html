@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nate Simon Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="01-selectors.md">About</a></li>
+          <li><a href="02-navbar.html">Previous Experience</a></li>
+          <li><a href="03-table.html">Projects</a></li>
+          <li><a href="04-form.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="selfie-container">
+        <img
+          class="selfie"
+          src="/selfie.png"
+          width="300"
+          alt="Photo of student Nathan Simon, with flowers in background"
+        />
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-content">
+          <p>
+            Hello! My name is Nate Simon, and I am a senior at Portland State
+            University pursuing a degree in Computer Science. My hobbies include
+            recreational reading and hanging out with my dog, Kira. My favorite
+            genre of books is sci-fi/fantasy, unfortunately nonfiction just
+            can't compete with Middle Earth and the like. My dog is a German
+            Shepard and Husky mix, I like the idea of all my possessions being
+            covered in dog hair so I made sure to get this breed mix for her
+            fantastic shedding capacity. In addition to providing some
+            background on me personally, this website also serves as a showcase
+            of my portfolio by featuring my projects, professional experience,
+            and contact information. Thank you for visiting!
+          </p>
+          <div class="kira-container">
+            <img
+              class="kira"
+              src="/Kira.jpg"
+              width="300"
+              alt="Photo of Nate's German Shepard, Kira, sitting in front of a small waterall on a snowy day."
+            />
+          </div>
+        </div>
+      </section>
+      <section id="prev_exp">
+        <div class="prev-exp-content">
+          <div class="left-section">
+            <button id="resume-button" class="resume-button">
+              View My Resume
+            </button>
+          </div>
+          <div class="right-section">
+            <h2>Work Experience</h2>
+            <p>
+              My academic journey has been enriched by extensive professional
+              experience gained during breaks from school. I began my career as
+              a contracted aviation electrician, which led me to the
+              semiconductor field, where I worked as both a technician and an
+              engineer. Although a large part of these jobs entailed working
+              with my hands, I developed my troubleshooting and problem-solving
+              skills, which have helped me tremendously in my pursuit of higher
+              education. I have also been working at a comapny called Cordiance,
+              an software compnay that specializes in indirect tax and automated
+              tax solutions. My tenure there started as a summer internship, but
+              has grown into a part-time position while I finsih my schooling.
+              This has been a fantastic learning experience and I look forward
+              to contributing further to this great company.
+            </p>
+          </div>
+        </div>
+
+        <!-- popup for resume -->
+        <div id="resume-popup" class="popup-container">
+          <div class="popup-content">
+            <span id="close-popup" class="close-button">&times;</span>
+            <embed src="Resume.pdf" type="application/pdf" class="resume-embed">
+          </div>
+        </div>
+      </section>
+      <section id="projects"><h2>Projects</h2></section>
+      <section id="contact"><h2>Contact</h2></section>
+    </main>
+    <script src="portfolio.js"></script>
+  </body>
+</html>

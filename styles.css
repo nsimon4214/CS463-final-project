@@ -10,17 +10,28 @@
   --teal: #006060;
   --violetred: #a2106d;
   --orange: #ffa500;
+  --lightgray: #f0f4f885;
+  --red: #b80606;
 }
 
 body {
-  /*font-family: "Open Sans", "Helvetica Neue", sans-serif;*/
-  font-family: 'Times New Roman', Times, sans-serif;
-  font-size: 1.2em;
+  font-family: "Times New Roman", Times, sans-serif;
+  font-size: 1.4em;
   color: var(--black);
+  margin: 0;
+  background-color: var(--lightgray);
+}
+
+main {
+  margin: 1em;
 }
 
 h1 {
   text-align: center;
+}
+
+#about {
+  padding: 2em;
 }
 
 .selfie {
@@ -30,10 +41,122 @@ h1 {
   border-radius: 50%;
 }
 
-p {
-  padding: 0 2em;
+p{
   text-align: justify;
 }
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content p {
+  flex: 1;
+  margin-right: .5em;
+}
+
+.kira-container {
+  flex: 1;
+  text-align: center;
+}
+
+.kira {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#prev_exp {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+
+.prev-exp-content {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+}
+
+.left-section {
+  background-image: url('abstractcircuitryblueprint.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.right-section h2,
+.right-section p {
+  margin: 0;
+}
+
+.resume-button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: var(--violetred);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resume-button:hover {
+  background-color: var(--teal);
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 110%;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 8px;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--red);
+  cursor: pointer;
+}
+
+/* PDF Embed */
+.resume-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+
 
 form {
   width: 400px;
