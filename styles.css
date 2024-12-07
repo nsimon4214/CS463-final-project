@@ -38,10 +38,11 @@ main {
 
 h1 {
   text-align: center;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 2em;
 }
 
 #about {
@@ -99,23 +100,6 @@ p {
   height: 200px;
 }
 
-.left-section {
-  background-image: url("abstractcircuitryblueprint.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  flex: 1;
-  display: flex;
-  height: 200px;
-  justify-content: center;
-  align-items: center;
-}
-
-.right-section {
-  flex: 2;
-  padding: 2em;
-}
-
 .resume-button {
   padding: 0.5em 1em;
   margin: 1em 1em;
@@ -168,7 +152,6 @@ p {
   color: var(--black);
   cursor: pointer;
 }
-
 
 .resume-embed {
   width: 100%;
@@ -279,7 +262,7 @@ nav ul li a:hover {
 
 .form-row {
   width: 100%;
-  padding: 0 1em; 
+  padding: 0 1em;
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -295,7 +278,7 @@ nav ul li a:hover {
 .form-row textarea {
   width: 100%;
   padding: 0.5em;
-  font-size: .8em;
+  font-size: 0.8em;
   border: 1px solid var(--gray);
   border-radius: 5px;
   box-sizing: border-box;
@@ -306,7 +289,6 @@ textarea {
   resize: none;
 }
 
-
 .form-actions {
   display: flex;
   justify-content: center;
@@ -315,7 +297,7 @@ textarea {
 
 .form-button {
   padding: 0.5em 1em;
-  font-size: .8em;
+  font-size: 0.8em;
   background-color: var(--black);
   color: var(--white);
   border: none;
