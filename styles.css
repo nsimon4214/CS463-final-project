@@ -68,8 +68,6 @@ p {
 .about-content h2 {
   flex: 0 0 100%;
   text-align: left;
-  margin: 1;
-  padding: 1 1;
   height: 80px;
 }
 
