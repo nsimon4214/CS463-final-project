@@ -78,17 +78,6 @@ p {
   margin-right: 0.5em;
 }
 
-.kira-container {
-  flex: 1;
-  text-align: center;
-}
-
-.kira {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
 #prev_exp {
   padding: 2em;
   color: #000;
@@ -105,6 +94,11 @@ p {
   justify-content: space-between;
   width: 100%;
   gap: 1em;
+  background-image: url("abstractcircuitryblueprint.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 
 .left-section {
@@ -122,11 +116,6 @@ p {
 .right-section {
   flex: 2;
   padding: 2em;
-}
-
-.right-section h2,
-.right-section p {
-  margin: 0;
 }
 
 .resume-button {
