@@ -18,3 +18,32 @@ window.addEventListener('click', (event) => {
     resumePopup.style.display = 'none';
   }
 });
+
+// scroll to top button
+const scrollTopButton = document.createElement('button');
+scrollTopButton.innerText = '↑ Top';
+scrollTopButton.id = 'scroll-top-button';
+document.body.appendChild(scrollTopButton);
+
+scrollTopButton.style.display = 'none';
+scrollTopButton.style.position = 'fixed';
+scrollTopButton.style.bottom = '20px';
+scrollTopButton.style.right = '20px';
+scrollTopButton.style.padding = '1em';
+scrollTopButton.style.backgroundColor = '#a2106d';
+scrollTopButton.style.color = '#fefefe';
+scrollTopButton.style.border = 'none';
+scrollTopButton.style.borderRadius = '5px';
+scrollTopButton.style.cursor = 'pointer';
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopButton.style.display = 'block';
+  } else {
+    scrollTopButton.style.display = 'none';
+  }
+});
+
+scrollTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
