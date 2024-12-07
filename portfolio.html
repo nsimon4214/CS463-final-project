@@ -11,11 +11,11 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="01-selectors.md">About</a></li>
-          <li><a href="02-navbar.html">Work Experience</a></li>
-          <li><a href="03-table.html">Projects</a></li>
-          <li><a href="04-form.html">Contact</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#prev_exp">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -88,11 +88,11 @@
             <div class="popup-header">
               <span id="close-popup" class="close-button">&times;</span>
             </div>
-            <embed
+            <iframe
               src="Resume.pdf"
-              type="application/pdf"
               class="resume-embed"
-            />
+              title="Resume of Nate Simon"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -113,9 +113,7 @@
             like pushups for 78 seconds, situps for 99 seconds, and squats for
             102 seconds, followed by a rest for 68 seconds.
           </p>
-          <p>
-            <strong>Features:</strong>
-          </p>
+          <h3>Features:</h3>
           <ul>
             <li>Customizable time intervals.</li>
             <li>
@@ -133,7 +131,35 @@
           </a>
         </div>
       </section>
-      <section id="contact"><h2>Contact</h2></section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <div class="form-row">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required />
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <label for="comments">Comments:</label>
+            <textarea
+              class="form-textarea form-element-container"
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="form-button">Submit</button>
+            <button type="reset" class="form-button reset-button">Reset</button>
+          </div>
+        </form>
+      </section>
     </main>
     <script src="portfolio.js"></script>
   </body>
