@@ -26,7 +26,7 @@ section {
 
 body {
   font-family: "Times New Roman", Times, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: var(--black);
   margin: 0;
   background-color: var(--lightgray);
@@ -214,20 +214,24 @@ nav ul li a:hover {
 
 #projects {
   padding: 2em;
+  text-align: center;
 }
 
-#projects h2 {
-  text-align: center;
-  margin-bottom: 1em;
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 
 .project-item {
-  margin: 1em auto;
+  flex: 1;
   padding: 1.5em;
   border: 1px solid var(--gray);
   border-radius: 8px;
   background-color: #fff;
-  max-width: 600px;
+  max-width: 500px;
+  text-align: left;
 }
 
 .project-item h3 {
@@ -293,7 +297,7 @@ nav ul li a:hover {
 .form-row textarea {
   width: 100%;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: .8em;
   border: 1px solid var(--gray);
   border-radius: 5px;
   box-sizing: border-box;
@@ -313,7 +317,7 @@ textarea {
 
 .form-button {
   padding: 0.5em 1em;
-  font-size: 1em;
+  font-size: .8em;
   background-color: var(--black);
   color: var(--white);
   border: none;
@@ -348,5 +352,12 @@ textarea {
     gap: 0.5em;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
